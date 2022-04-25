@@ -69,7 +69,7 @@ export const AddSales = (props) => {
     created_at: yup.date().required("please select date"),
     invoice_number: yup.string().required("please provide invoice number"),
     // customer_name: yup.string(),
-    customer_id: yup.string(),
+    // customer_id: yup.string(),
     store: yup.string().required("please select store"),
     payment_type: yup.string().required("please choose a payment method"),
     total_amount: yup.number().integer().typeError("Total amount must be a number"),
@@ -352,7 +352,7 @@ export const AddSales = (props) => {
                           options={customers}
                           id="customers"
                           useId={true} />
-                      </Grid> */}
+                      </Grid> 
                         <Grid item xs={4}>
                          <SearchableSelect
                           name="customer_id"
@@ -361,7 +361,7 @@ export const AddSales = (props) => {
                           options={customers}
                          id="customers"
                          />
-                       </Grid>
+                       </Grid>*/}
                       <Grid item xs={4}>
                         <CustomTextField  name="branch" value={values.branch} />
                       </Grid>

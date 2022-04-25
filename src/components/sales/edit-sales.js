@@ -294,7 +294,7 @@ export const EditSalesView = (props) => {
                       </Grid>
                       {/* <Grid item xs={4}>
                       <CustomSelect  name="customer_id"label="Choose Customer" id="customers" useId={true} options={customers}/>
-                      </Grid> */}
+                      </Grid> 
                        <Grid item xs={6}>
                           <SearchableSelect
                            name="customer_id"
@@ -303,7 +303,7 @@ export const EditSalesView = (props) => {
                             options={customers}
                             id="customers"
                                 />
-                       </Grid>
+                       </Grid>*/}
                       <Grid item xs={6}>
                         <CustomTextField name="amount" label="Amount" />
                       </Grid>

@@ -53,7 +53,7 @@ export const AddDeposit = (props) => {
     invoice_number: "",
     // amount_deposited: "",
     customer_name: "",
-    customer_id:"",
+    // customer_id:"",
     branch: Cookies.get("selectedBranch"),
     payment_type: "",
     items: [
@@ -85,7 +85,7 @@ export const AddDeposit = (props) => {
     //   .required("please enter amount deposited"),
     // customer_phone: yup.string().required("please enter Cutomer Phone number"),
     customer_name: yup.string(),
-    customer_id:yup.string(),
+    // customer_id:yup.string(),
     items: yup.array().of(
       yup.object().shape({
         barcode: yup.string(),
@@ -365,7 +365,7 @@ export const AddDeposit = (props) => {
                           options={customers}
                           id="customers"
                           useId={true} />
-                      </Grid> */}
+                      </Grid> 
 
                        <Grid item xs={4}>
                        <SearchableSelect
@@ -375,7 +375,7 @@ export const AddDeposit = (props) => {
                        options={customers}
                           id="customers"
                        />
-                      </Grid>
+                      </Grid>*/}
                       <FieldArray name="items">
                         {() =>
                           values.items.map((item, index) =>
