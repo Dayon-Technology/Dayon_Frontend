@@ -44,7 +44,7 @@ export const AddSales = (props) => {
     branch: Cookies.get("selectedBranch"),
     invoice_number: "",
     // customer_name:"",
-    customer_id:"",
+    // customer_id:"",
     total_amount: "",
     payment_type: "",
     items: [
@@ -124,6 +124,7 @@ export const AddSales = (props) => {
   };
 
   const Submit = (values) => {
+        console.log(values)
     addSalesData({
       dispatch: dispatch,
       sales: values,

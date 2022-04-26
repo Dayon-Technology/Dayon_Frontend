@@ -145,6 +145,7 @@ export const AddDeposit = (props) => {
 
   const { enqueueSnackbar } = useSnackbar();
   const Submit = (values) => {
+    console.log(values)
     addDepositData({
       deposit: values,
       enqueueSnackbar: enqueueSnackbar,
